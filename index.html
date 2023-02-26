@@ -1,0 +1,173 @@
+<html>
+  <head>
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <form onsubmit="submitForm(event)">
+          <!-- <fieldset>
+                        <legend>Personal Details</legend>
+                         -->
+          <label for="image-url">Image url</label>
+          <input required type="url" id="image-url" required/>
+          <br />
+          <label>Name</label>
+          <input required type="text" id="name-field"/>
+          <br />
+          <label>Address</label>
+          <input required type="text" id="address-field" />
+          <br />
+          <label>Phone Number</label>
+          <input required type="number" id="phone-field" />
+          <br />
+          <label>Email</label>
+          <input required type="email" id="email-field" />
+          <br />
+          <label>Website</label>
+          <input required type="url" id="website-field" />
+          <br />
+          <!-- </fieldset>
+                    <fieldset> -->
+          <!-- <legend>Skills</legend> -->
+          <label>Skills</label>
+          <input required type="text" id="skills-field" />
+          <br />
+          <label>Objective</label>
+          <input required type="text" id="objective-field" />
+          <br />
+          <!-- </fieldset>
+                    <fieldset>
+                        <legend>Work Experience</legend> -->
+          <div id="experience-container-form">
+            <label>Experience</label>
+            <button type="button" onclick="addExperienceField()">Add</button>
+            <div class="experience-holder">
+              <input required
+                type="text"
+                class="experience-input-field company-name-field"
+                placeholder="Company Name"
+              />
+              <input required
+                type="text"
+                class="experience-input-field role-field"
+                placeholder="Role"
+              />
+              <input required
+                type="text"
+                class="experience-input-field project-desc-field"
+                placeholder="Project Description"
+              />
+            </div>
+          </div>
+          <br />
+          <div id="education-container-form">
+            <label>Education</label>
+            <button type="button" onclick="addEducationField()">Add</button>
+            <input type="text" />
+          </div>
+          <br />
+          <!-- </fieldset> -->
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+      </div>
+      <div class="resume-container">
+        <div class="resume">
+          <div class="left-section">
+            <div class="image-container">
+              <img
+                src="https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg"
+              />
+            </div>
+            <div class="name">Nancy Jackson</div>
+            <div class="profile-container">
+              <div class="profile-heading">
+                <span>Profile</span>
+              </div>
+              <div class="profile-details left-pad">
+                <div class="key">Address</div>
+                <div class="value">California, USA</div>
+                <div class="key">Phone</div>
+                <div class="value">8988887777</div>
+                <div class="key">Email</div>
+                <div class="value">nancy@gmail.com</div>
+                <div class="key">Website</div>
+                <div class="value">www.resumebuilder.com</div>
+              </div>
+            </div>
+            <br />
+            <div class="skills-container">
+              <div class="skills-heading">
+                <span>Skills</span>
+              </div>
+              <div class="skills-details left-pad">
+                <div class="value">HTML</div>
+                <div class="value">CSS</div>
+                <div class="value">Javascript</div>
+                <div class="value">Java</div>
+              </div>
+            </div>
+          </div>
+          <div class="right-section">
+            <div class="objective">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </div>
+            <div class="work-experience">
+              <hr />
+              <h3 class="work-ex-heading">Work Experience</h3>
+              <hr />
+              <div id="experiences-holder">
+                <div class="work-ex-details">
+                  <div class="company-name">Newton School</div>
+                  <div class="role">Instructor</div>
+                  <div class="project">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book.
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book.
+                   
+                  </div>
+                </div>
+                <div class="work-ex-details">
+                  <div class="company-name">Newton School</div>
+                  <div class="role">Instructor</div>
+                  <div class="project">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="education">
+              <hr />
+              <h3>Education</h3>
+              <hr />
+              <div class="college-details">
+                <div class="college-name">The city college of New York</div>
+                <div class="degree">MS in Computer Science</div>
+              </div>
+              <div class="college-details">
+                <div class="college-name">The city college of New York</div>
+                <div class="degree">MS in Computer Science</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
